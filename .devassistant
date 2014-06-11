@@ -1,0 +1,18 @@
+dependencies:
+- rpm:
+  - python3
+- if $venv:
+  - rpm:
+    - python${py3}-virtualenv
+- else:
+  - rpm:
+    - python${py3}-django
+devassistant_version: 0.9.0
+original_kwargs:
+  github: tradej
+  name: bookmarks
+  py3: 3
+  venv: ''
+project_type:
+- python
+- django
